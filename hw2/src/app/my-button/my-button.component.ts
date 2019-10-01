@@ -18,6 +18,13 @@ export class MyButtonComponent implements OnInit {
     console.log(`The state is now ${this.liked}`);
   }
 
+  toggleBackground() {
+    if (this.liked) {
+      return 'is-liked';
+    }
+    return '';
+  }
+
   ngOnInit() {
     this.liked = false;
   }
