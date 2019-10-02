@@ -10,10 +10,13 @@ export class MessageComponent implements OnInit {
   timeStamp: string;
   text: string;
 
-  constructor(txt) {
+  /*
+    constructor(txt: string) {
     this.timeStamp = (new Date()).toDateString();
     this.text = txt;
   }
+  */
+  constructor() {}
 
   ngOnInit() { }
 
