@@ -1,7 +1,7 @@
 # csc436_hw2
 
-GitHub Link : https://github.com/mrfleming/csc436_hw2
-Clone Link : https://github.com/mrfleming/csc436_hw2.git
+GitHub Link : https://github.com/mrfleming/csc436_hw2,<br>
+Clone Link : https://github.com/mrfleming/csc436_hw2.git<br>
 
 ## Description
 
