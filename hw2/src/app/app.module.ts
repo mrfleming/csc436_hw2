@@ -3,20 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { MyImageComponent } from './my-image/my-image.component';
 import { MyButtonComponent } from './my-button/my-button.component';
-import { MessageComponent} from './model/message/message.component';
-import { MessagesComponent } from './model/messages/messages.component';
-import { UserComponent } from './model/user/user.component';
+
+// import { MessageComponent} from './model/message/message.component';
+// import { MessagesComponent } from './model/messages/messages.component';
+// import { UserComponent } from './model/user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyImageComponent,
     MyButtonComponent,
-    MessageComponent,
-    MessagesComponent,
-    UserComponent
+    // MessageComponent,
+    // MessagesComponent,
+    // UserComponent
   ],
   imports: [
     BrowserModule,
