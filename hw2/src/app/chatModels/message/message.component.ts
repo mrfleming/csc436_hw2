@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-message',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  timeStamp: string;
-  text: string;
+  @Input() timeStamp: string;
+  @Input() text: string;
 
   constructor() {}
 

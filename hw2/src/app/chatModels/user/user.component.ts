@@ -16,11 +16,6 @@ export class UserComponent implements OnInit {
   ngOnInit() {
     const r = Math.round(1000000 * Math.random());
     this.name = `user${r}`;
-    /**
-     * const m = new MessageComponent('Signed on...');
-     * this.history = new MessagesComponent();
-     * this.history.append(m);
-     */
   }
 
 }

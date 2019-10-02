@@ -1,8 +1,7 @@
 <p>messages array works!</p>
 <ul>
     <li *ngFor="let mc of chat">
-        {{mc.timeStamp}} : {{mc.text}}
-        <!-- <app-message [this]="mc"></app-message> -->
-        <!-- [timeStamp]="mc.timeStamp" [text]="mc.text" -->
+        <!-- {{mc.timeStamp}} : {{mc.text}} -->
+        <app-message [timeStamp]="[mc.timeStamp]" [text]="[(mc.text)]"></app-message>
     </li>
 </ul>
