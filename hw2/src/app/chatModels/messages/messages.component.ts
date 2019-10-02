@@ -1,20 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import {MessageComponent} from '../message/message.component';
+import { MessageComponent } from '../message/message.component';
+import { MessagesService } from '../../messages.service';
 
 @Component({
   selector: 'app-messages-array',
   templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.css']
+  styleUrls: ['./messages.component.css'],
+  providers: [MessagesService]
 })
 export class MessagesComponent implements OnInit {
   chat: MessageComponent[];
 
-  constructor() { }
+  constructor(private service: MessagesService) { }
 
   append(m: MessageComponent) {
-    this.chat[this.chat.length] = m;
+    this.chat.push(m);
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    // downloads list of strings
+    this.chat = this.service.getChatLog();
+   }
 
 }
