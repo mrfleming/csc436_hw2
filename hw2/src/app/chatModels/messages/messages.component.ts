@@ -9,7 +9,7 @@ import { MessagesService } from '../../messages.service';
   providers: [MessagesService]
 })
 export class MessagesComponent implements OnInit {
-  chat: MessageComponent[];
+  chat: MessageComponent[] = [];
 
   constructor(private service: MessagesService) { }
 
@@ -20,6 +20,7 @@ export class MessagesComponent implements OnInit {
   ngOnInit() {
     // downloads list of strings
     this.chat = this.service.getChatLog();
+    console.table(this.chat);
    }
 
 }

@@ -16,7 +16,10 @@ export class MessageComponent implements OnInit {
   }
 
   setMessage(txt: string) {
-    this.timeStamp = (new Date()).toDateString();
+    const today = new Date();
+    const day = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    const time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+    this.timeStamp = `(${day}) --> ${time}`;
     this.text = txt;
   }
 }

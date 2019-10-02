@@ -27,7 +27,7 @@ export class MessagesService {
   getChatLog() {
     const chat = this.chatLog();
     chat.forEach((item, index) => {
-      console.log(`${index} : ${item}`);
+      // console.log(`${index} : ${item}`);
       const msg = new MessageComponent();
       msg.setMessage(item);
       this.msgs.push(msg);
