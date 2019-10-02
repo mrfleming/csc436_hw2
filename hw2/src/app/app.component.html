@@ -7,14 +7,25 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+    main{
+      width: 80%;
+      margin: 0 auto;
+    }
+    header{
+      text-align: center;
+    }
 </style>
 
-<h1>Homework #2 - By Eric Fleming</h1>
-<span>{{ title }} app is running!</span><br>
-<app-my-image></app-my-image>
-<app-my-button></app-my-button>
-<h3>Quotes from the movie</h3>
-<app-messages-array></app-messages-array>
-<app-user></app-user>
-
-<router-outlet></router-outlet>
+<main>
+  <header>
+    <h1>Homework #2 - By Eric Fleming</h1>
+    <span>{{ title }} app is running!</span><br>
+    <app-my-image></app-my-image>
+    <br>
+    <app-my-button></app-my-button>
+  </header>
+  <app-user></app-user>
+  <h3>Quotes from the movie</h3>
+  <app-messages-array></app-messages-array>
+  <router-outlet></router-outlet>
+</main>
